@@ -38,6 +38,20 @@
         
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </fotime>
+    
+    <div>
+      日付:<?= data[0][0] ?><br>
+      出勤人数:<br>
+      10:00:<br>
+      11:00:<br>
+      12:00:<br>
+      13:00:<br>
+      14:00:<br>        
+      15:00:<br>
+      16:00:<br>
+      17:00:<br>
+      18:00:<br>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -98,11 +112,11 @@
             //JSONから配列に変換
             const object = data;
             //inputタグそれぞれに取得したデータを設定
-            $('input').each(function (index, element) {
-                if (object[0][$(element).attr('name')]) {
-                    $(element).val([object[0][$(element).attr('name')]]);
-                }
-            });
+            //$('input').each(function (index, element) {
+            //    if (object[0][$(element).attr('name')]) {
+            //        $(element).val([object[0][$(element).attr('name')]]);
+            //    }
+            //});
         });
     </script>
 
