@@ -40,7 +40,7 @@
     </fotime>
     
     <div>
-      日付:<?= object[0] ?><br>
+      日付:更新テスト<br>
       出勤人数:<br>
       10:00:<br>
       11:00:<br>
@@ -111,12 +111,12 @@
         .then(data => {
             //JSONから配列に変換
             const object = data;
-            //inputタグそれぞれに取得したデータを設定
-            //$('input').each(function (index, element) {
-            //    if (object[0][$(element).attr('name')]) {
-            //        $(element).val([object[0][$(element).attr('name')]]);
-            //    }
-            //});
+            inputタグそれぞれに取得したデータを設定
+            $('input').each(function (index, element) {
+                if (object[0][$(element).attr('name')]) {
+                    $(element).val([object[0][$(element).attr('name')]]);
+                }
+            });
         });
     </script>
 
