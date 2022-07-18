@@ -40,7 +40,7 @@
     </fotime>
     
     <div>
-      日付:<?= object ?><br>
+      日付:<?= object[0] ?><br>
       出勤人数:<br>
       10:00:<br>
       11:00:<br>
@@ -102,7 +102,7 @@
                 return false;
             });
         });
-//GASのAPIのURL（各自変更してください。）
+
     const endpoint = "https://script.google.com/macros/s/AKfycbycBLiMIZ_XLEV2Ye6KBnpzrFHJF26b1DT_mwYVBLQXiwQk-al1Ex26UIUKOhjfw1uKyA/exec";        
         //APIを使って非同期データを取得する
         fetch(endpoint)
