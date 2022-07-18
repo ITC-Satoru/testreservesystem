@@ -112,7 +112,7 @@
             //JSONから配列に変換
             const object = data;
             console.log(data);
-            inputタグそれぞれに取得したデータを設定
+            //inputタグそれぞれに取得したデータを設定
             $('input').each(function (index, element) {
                 if (object[0][$(element).attr('name')]) {
                     $(element).val([object[0][$(element).attr('name')]]);
